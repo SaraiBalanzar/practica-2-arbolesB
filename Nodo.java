@@ -55,12 +55,15 @@ public class Nodo{
         this.contador++;
     }
 
+    public void decrementarContador(){
+        this.contador--;
+    }
+
     public void actualizarContador(){
         int i= 0;
         while(i < claves.length && claves[i] != -1 ){
             i++;
         }
-
         this.contador = i;
     }
 
@@ -89,9 +92,4 @@ public class Nodo{
             cadena += "]";
             return cadena;  
         }
-
-
-
-
-
 }
